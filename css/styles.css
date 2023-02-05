@@ -1,0 +1,496 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--First-color);
+    color: var(--Fourth-color);
+    animation-name: open;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+:root{
+    --First-color: #112B3C;
+    --Second-color: #205375;
+    --Third-color: #F66B0E;
+    --Fourth-color: #EFEFEF;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 85px;
+    padding: 10px 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Third-color);
+}
+
+.bq-logo{
+    display: block;
+}
+
+.fa-code{
+    margin-bottom: 8px;
+    font-size: 30px;
+    color: var(--Second-color);
+}
+
+.nav-items{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--Fourth-color);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--Fourth-color);
+}
+
+.separator{
+    width: 3px;
+    height: 18px;
+    background-color: var(--Second-color);
+}
+
+.welcome-section{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-1{
+    margin: 70px auto 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-machine{
+    display: inline-block;
+    width: 5ch;
+    overflow: hidden;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    white-space: nowrap;
+    border-right: 4px solid var(--Fourth-color);
+    animation: typing 3s steps(5) infinite, blink 0.5s step-end infinite alternate;
+}
+
+.desc{
+    margin: 0 0 40px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--Third-color);
+}
+
+.fa-laptop-code{
+    font-size: 6rem;
+    transform-origin: 50% 50%;
+    animation: rotate 8s ease-in-out infinite;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    background-color: var(--Fourth-color);
+    color: var(--First-color);
+}
+
+.title-2{
+    font-size: 1.8rem;
+    margin: 80px 0 60px;
+}
+
+.languages{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    font-size: 5rem;
+}
+
+.language-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-python,
+.fa-square-git{
+    padding-bottom: 10px;
+}
+
+.fa-html5{
+    color: #e34f26;
+}
+
+.fa-css3-alt{
+    color: #2965f1;
+}
+
+.fa-python{
+    color: #4584b6;
+}
+
+.fa-square-git{
+    color: #F1502F;
+}
+
+.language-text{
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--Second-color);
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.cards{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.card{
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 20px var(--Fourth-color);
+    border-radius: 25px;
+}
+
+.title-3{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-desc{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card-btn{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    border: 3px solid var(--Third-color);
+    border-radius: 30px;
+}
+
+.whatsapp-chat{
+    background: linear-gradient(rgba(7 7 7 /0.7), rgba(7 7 7 /0.7)), url(https://cdn.pixabay.com/photo/2022/01/21/00/35/whatsapp-icon-6953525_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.freecodecamp{
+    background: linear-gradient(rgba(7 7 7 /0.7), rgba(7 7 7 /0.7)), url(https://popsql.com/static/external-logos/freecodecamp.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.steel-structures{
+    background: linear-gradient(rgba(7 7 7 /0.7), rgba(7 7 7 /0.7)), url(https://cdn.pixabay.com/photo/2018/09/23/19/56/steel-bridge-3698295_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-color: var(--Fourth-color);
+    color: var(--First-color);
+}
+
+.contact-items{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 4rem;
+}
+
+.contact-link{
+    text-decoration: none;
+    color: var(--Second-color);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+}
+
+.fa-location-dot{
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.fa-circle-up{
+    font-size: 2rem;
+    color: var(--Third-color);
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+    .nav-items{
+        gap: 20px;
+        font-size: 1.1rem;
+    }
+
+    .fa-code{
+        font-size: 2rem;
+    }
+
+    .separator{
+        height: 20px;
+    }
+
+    .title-1{
+        font-size: 2.3rem;
+    }
+    
+    .desc{
+        font-size: 1.4rem;
+    }
+    
+    .fa-laptop-code{
+        font-size: 7rem;
+    }
+
+    .cards{
+        gap: 50px;
+    }
+
+    .footer{
+        padding: 25px 50px;
+    }
+}
+
+@media (min-width: 769px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 60px;
+    }
+
+    .nav-items{
+        gap: 20px;
+        font-size: 1.2rem;
+    }
+
+    .fa-code{
+        font-size: 2.2rem;
+    }
+
+    .separator{
+        height: 1.5rem;
+    }
+
+    .title-1{
+        font-size: 2.8rem;
+    }
+    
+    .desc{
+        font-size: 1.8rem;
+    }
+    
+    .fa-laptop-code{
+        font-size: 9rem;
+    }
+    
+    .title-2{
+        font-size: 2.2rem;
+    }
+    
+    .languages{
+        font-size: 6rem;
+    }
+
+    .language-text{
+        font-size: 1.4rem;
+    }
+
+    .projects{
+        padding-bottom: 120px;
+    }
+
+    .cards{
+        width: auto;
+        gap: 50px;
+    }
+
+    .footer{
+        padding: 25px 80px;
+    }
+}
+
+@media (min-width: 1280px){
+    .header{
+        padding: 12px 180px;
+    }
+
+    .title-3{
+        font-size: 1.5rem;
+    }
+
+    .footer{
+        padding: 25px 180px;
+    }
+
+    .fa-circle-up{
+        font-size: 2.5rem;
+    }
+}
+
+.fa-code:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: var(--Second-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.fa-html5:hover, 
+.fa-css3-alt:hover,
+.fa-python:hover,
+.fa-square-git:hover{
+    text-shadow: -20px 10px 5px var(--Second-color);
+    transform-origin: 25% 50% 60px;
+    transform: rotate3d(1, 1, 0, -25deg);
+    transition: 0.75s linear;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+
+.card-btn:hover{
+    background-color: var(--Third-color);
+    color: var(--First-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.fa-envelope:hover,
+.fa-whatsapp:hover,
+.fa-github:hover{
+    color: var(--First-color);
+    transform: scale(1.5);
+    transition: 0.70s;
+}
+
+.fa-circle-up:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }    
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }    
+}
+
+@keyframes open{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-90deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
