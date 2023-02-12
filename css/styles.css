@@ -40,10 +40,9 @@ body{
     display: block;
 }
 
-.fa-code{
-    margin-bottom: 8px;
-    font-size: 30px;
-    color: var(--Second-color);
+.bq-logo-img{
+    width: 50px;
+    margin-bottom: 2px;
 }
 
 .nav-items{
@@ -293,14 +292,14 @@ body{
     color: var(--Third-color);
 }
 
-@media (min-width: 480px) and (max-width: 768px){
+@media (min-width: 480px) {
     .nav-items{
         gap: 20px;
         font-size: 1.1rem;
     }
 
-    .fa-code{
-        font-size: 2rem;
+    .bq-logo-img{
+        width: 55px;
     }
 
     .separator{
@@ -328,20 +327,20 @@ body{
     }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px) {
     .header{
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding: 12px 60px;
     }
 
     .nav-items{
-        gap: 20px;
         font-size: 1.2rem;
     }
 
-    .fa-code{
-        font-size: 2.2rem;
+    .bq-logo-img{
+        width: 65px;
     }
 
     .separator{
@@ -378,7 +377,6 @@ body{
 
     .cards{
         width: auto;
-        gap: 50px;
     }
 
     .footer{
@@ -386,7 +384,13 @@ body{
     }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1024px) {
+    .contact-items{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1280px) {
     .header{
         padding: 12px 180px;
     }
@@ -400,7 +404,7 @@ body{
     }
 
     .fa-circle-up{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 }
 
