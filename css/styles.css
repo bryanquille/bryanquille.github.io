@@ -181,6 +181,7 @@ body{
 
 .fa-html5,
 .fa-css3-alt,
+.fa-square-js,
 .fa-python,
 .fa-square-git{
     padding-bottom: 10px;
@@ -192,6 +193,10 @@ body{
 
 .fa-css3-alt{
     color: #2965f1;
+}
+
+.fa-square-js{
+    color: #f7df1e;
 }
 
 .fa-python{
@@ -514,6 +519,7 @@ body{
 
 .fa-html5:hover, 
 .fa-css3-alt:hover,
+.fa-square-js:hover,
 .fa-python:hover,
 .fa-square-git:hover{
     text-shadow: -20px 10px 5px var(--Second-color);
