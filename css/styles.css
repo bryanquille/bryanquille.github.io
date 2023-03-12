@@ -284,6 +284,18 @@ body{
     background-size: cover;
 }
 
+.yt-downloader{
+    background: linear-gradient(rgba(7 7 7 /0.7), rgba(7 7 7 /0.7)), url(https://cdn.pixabay.com/photo/2022/01/21/00/38/youtube-icon-6953527_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.calculator{
+    background: linear-gradient(rgba(7 7 7 /0.7), rgba(7 7 7 /0.7)), url(https://cdn.pixabay.com/photo/2017/06/05/15/52/calculator-2374442_1280.png);
+    background-position: center;
+    background-size: cover;
+}
+
 /* .steel-structures{
     background: linear-gradient(rgba(7 7 7 /0.7), rgba(7 7 7 /0.7)), url(https://cdn.pixabay.com/photo/2018/09/23/19/56/steel-bridge-3698295_960_720.jpg);
     background-position: center;
