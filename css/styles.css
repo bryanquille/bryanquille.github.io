@@ -253,6 +253,7 @@ a {
 .spin-container {
     position: relative;
     width: 82%;
+    height: 400px;
     min-height: 400px;
     max-width: 290px;
     overflow: hidden;
@@ -290,22 +291,31 @@ a {
     background-color: var(--First-color);
 }
 
-.pc1 {
-    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/freecodecamp.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.pc2 {
+.calculator {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/calculator.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.pc3 {
+.profesor-buho-lp {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/profesor-buho.webp);
+}
+
+.whatsapp-chat-opener {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/whatsapp.webp);
+}
+
+.freeCodeCamp-courses {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/freecodecamp.webp);
+}
+
+.pets-landing-page {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/pets.webp);
+}
+
+.calculator,
+.profesor-buho-lp,
+.whatsapp-chat-opener,
+.pets-landing-page,
+.freeCodeCamp-courses {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -313,6 +323,7 @@ a {
 
 .title-3 {
     font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
 .project-skills-used {
