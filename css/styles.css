@@ -42,7 +42,7 @@ a {
 }
 
 .bq-logo {
-    width: 4rem;
+    width: 3.2rem;
 }
 
 .open-menu {
@@ -191,7 +191,8 @@ a {
 .fa-js,
 .fa-python,
 .fa-square-git,
-.fa-square-github {
+.fa-square-github,
+.fa-npm {
     font-size: 5rem;
 }
 
@@ -217,6 +218,10 @@ a {
 
 .fa-square-github {
     color: #333333;
+}
+
+.fa-npm {
+    color: #cb3837;
 }
 
 .skill-desc {
@@ -457,6 +462,10 @@ a {
 
 @media (min-width: 1024px) {
     /* Header */
+    .bq-logo {
+        width: 3.5rem;
+    }
+
     .navlist {
         font-size: 1.5rem;
         gap: 3.2rem;
@@ -477,7 +486,8 @@ a {
     .fa-js,
     .fa-python,
     .fa-square-git,
-    .fa-square-github {
+    .fa-square-github,
+    .fa-npm {
         font-size: 6rem;
     }
 
@@ -536,9 +546,10 @@ a {
 .fa-js:hover:not(.project-skills),
 .fa-python:hover:not(.project-skills),
 .fa-square-git:hover,
-.fa-square-github:hover{
+.fa-square-github:hover,
+.fa-npm:hover {
     cursor: not-allowed;
-    text-shadow: -20px 10px 5px var(--Second-color);
+    text-shadow: -20px 10px 5px #20537588;
     transform-origin: 25% 50% 60px;
     transform: rotate3d(1, 1, 0, -25deg);
     transition: 0.75s linear;
