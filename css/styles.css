@@ -296,16 +296,20 @@ a {
     background-color: var(--First-color);
 }
 
-.calculator {
-    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/calculator.webp);
-}
-
 .profesor-buho-lp {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/profesor-buho.webp);
 }
 
 .whatsapp-chat-opener {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/whatsapp.webp);
+}
+
+.calculator {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/calculator.webp);
+}
+
+.dice-roll-simulator {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/dice.webp);
 }
 
 .freeCodeCamp-courses {
@@ -316,11 +320,12 @@ a {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/pets.webp);
 }
 
-.calculator,
 .profesor-buho-lp,
 .whatsapp-chat-opener,
-.pets-landing-page,
-.freeCodeCamp-courses {
+.calculator,
+.dice-roll-simulator,
+.freeCodeCamp-courses,
+.pets-landing-page {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
