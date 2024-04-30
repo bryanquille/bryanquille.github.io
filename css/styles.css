@@ -296,6 +296,10 @@ a {
     background-color: var(--First-color);
 }
 
+.katty-martinez-lp {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/katty-martinez.webp);
+}
+
 .profesor-buho-lp {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/profesor-buho.webp);
 }
@@ -316,10 +320,7 @@ a {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/freecodecamp.webp);
 }
 
-.pets-landing-page {
-    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/pets.webp);
-}
-
+.katty-martinez-lp,
 .profesor-buho-lp,
 .whatsapp-chat-opener,
 .calculator,
