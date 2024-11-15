@@ -8,7 +8,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--Fourth-color);
     color: var(--First-color);
-    animation: start 1s linear;
+    animation: start 0.8s linear;
 }
 
 a {
@@ -21,6 +21,8 @@ a {
     --Second-color: #205375;
     --Third-color: #F66B0E;
     --Fourth-color: #EFEFEF;
+    --Fifth-color: #608BC1;
+    --Sixth-color: #FF4545
 }
 
 /* MOBILE FIRST */
@@ -179,49 +181,15 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .skill {
     text-align: center;
 }
 
-.fa-html5,
-.fa-css3-alt,
-.fa-js,
-.fa-python,
-.fa-square-git,
-.fa-square-github,
-.fa-npm {
-    font-size: 5rem;
-}
-
-.fa-html5 {
-    color: #e34f26;
-}
-
-.fa-css3-alt {
-    color: #2965f1;
-}
-
-.fa-js {
-    color: #f7df1e;
-}
-
-.fa-python {
-    color: #4584b6;
-}
-
-.fa-square-git {
-    color: #f1502f;
-}
-
-.fa-square-github {
-    color: #333333;
-}
-
-.fa-npm {
-    color: #cb3837;
+.skill-icon {
+    width: 4rem;
 }
 
 .skill-desc {
@@ -266,13 +234,13 @@ a {
 }
 
 .projects-card {
+    z-index: 10;
     width: 96%;
     min-height: 390px;
     max-width: 280px;
     padding: 1.5rem;
     flex-direction: column;
     text-align: center;
-    z-index: 10;
 }
 
 .spin-container::before,
@@ -312,27 +280,22 @@ a {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/calculator.webp);
 }
 
-.dice-roll-simulator {
-    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/dice.webp);
+.one-hundred-projects {
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/100-projects.webp);
 }
 
 .freeCodeCamp-courses {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), url(../assets/images/projects/freecodecamp.webp);
 }
 
-.katty-martinez-lp,
-.profesor-buho-lp,
-.whatsapp-chat-opener,
-.calculator,
-.dice-roll-simulator,
-.freeCodeCamp-courses,
-.pets-landing-page {
+.projects-card {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .title-3 {
+    text-align: center;
     font-size: 1.5rem;
     margin: 1rem 0;
 }
@@ -343,20 +306,100 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .project-skills {
-    font-size: 2rem;
+    width: 2rem;
 }
 
 .app-site, 
 .github-location {
+    cursor: pointer;
     display: inline-block;
     margin-bottom: 0.8rem;
     padding: 1rem 2.5rem;
     border: 2px solid var(--Third-color);
     border-radius: 50px;
+    background-color: transparent;
+    color: var(--Fourth-color);
+}
+
+.back-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 23;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Second-color);
+    opacity: 0.9;
+    transition: all 0.5s ease-in;
+}
+
+.one-hundred-projects-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 25;
+    width: 90%;
+    max-width: 550px;
+    max-height: 90vh;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    overflow: auto;
+    background-color: var(--First-color);
+    box-shadow: 0 0 10px 5px var(--Third-color);
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in;
+}
+
+.one-hundred-projects-modal .title-3 {
+    color: var(--Third-color);
+}
+
+.one-hundred-projects-item {
+    width: 100%;
+    padding: 0rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.project-links-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.close-modal-btn-top {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: 0;
+    background-color: transparent;
+    color: var(--Fourth-color);
+}
+
+.close-modal-btn-bottom {
+    cursor: pointer;
+    margin: 1.2rem auto 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    display: block;
+    background-color: var(--Fifth-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.hidden-modal {
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Contact Me */
@@ -400,6 +443,24 @@ a {
 }
 
 /* RESPONSIVE DESIGN */
+
+@media (min-width: 390px) {
+    /* Skills */
+    .skills-items {
+        column-gap: 4rem;
+    }
+}
+
+@media (min-width: 400px) {
+    /* Skills */
+    .project-skills-used {
+        gap: 1rem;
+    }
+
+    .skills-items {
+        column-gap: 4.5rem;
+    }
+}
 
 @media (min-width: 768px) {    
     /* Header */
@@ -487,14 +548,18 @@ a {
     }
 
     /* Skills */
-    .fa-html5,
-    .fa-css3-alt,
-    .fa-js,
-    .fa-python,
-    .fa-square-git,
-    .fa-square-github,
-    .fa-npm {
-        font-size: 6rem;
+    .skills {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .skills-items {
+        row-gap: 4rem;
+        column-gap: 5rem;
+    }
+
+    .skill-icon {
+        width: 6rem;
     }
 
     /* Projects */
@@ -520,24 +585,47 @@ a {
     .contact-container {
         max-width: 1200px;
     }
+
+    .skills-items {
+        column-gap: 7rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .skills-items {
+        column-gap: 8rem;
+    }
 }
 
 /* HOVERS */
 .projects-card:hover {
     transform: scale(1.07);
-    transition: 0.8s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
 .app-site:hover,
 .github-location:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     background-color: var(--Third-color);
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
-.fa-envelope:hover,
-.fa-whatsapp:hover,
-.fa-github:hover {
+.project-link:hover,
+.github-link:hover {
+    color: var(--Fifth-color);
+}
+
+.close-modal-btn-top:hover {
+    color: var(--Sixth-color);
+}
+
+.close-modal-btn-bottom:hover {
+    border-color: var(--Sixth-color);
+    background-color: var(--Sixth-color);
+    color: var(--Fourth-color);
+}
+
+.increase-icon:hover {
     transform: scale(1.3);
     transition: 0.8s ease-in-out;
 }
@@ -547,18 +635,12 @@ a {
     transition: 0.8s ease-in-out;
 }
 
-.fa-html5:hover:not(.project-skills), 
-.fa-css3-alt:hover:not(.project-skills),
-.fa-js:hover:not(.project-skills),
-.fa-python:hover:not(.project-skills),
-.fa-square-git:hover,
-.fa-square-github:hover,
-.fa-npm:hover {
+.skill-icon:hover {
     cursor: not-allowed;
-    text-shadow: -20px 10px 5px #20537588;
+    filter: drop-shadow(-20px 10px 3px #20537588);
     transform-origin: 25% 50% 60px;
     transform: rotate3d(1, 1, 0, -25deg);
-    transition: 0.75s linear;
+    transition: 0.6s linear;
 }
 
 /* KEYFRAMES - ANIMATIONS */

@@ -5,6 +5,10 @@ const closeMenu = document.querySelector("#close-menu");
 const navLinks = document.querySelectorAll(".navlink");
 const header = document.querySelector(".header");
 const hero = document.querySelector("#hero");
+const openModalBtn = document.querySelector('#open-modal-btn');
+const closeModalBtns = document.querySelectorAll('.close-modal-btn');
+const backScreen = document.querySelector('#back-screen');
+const projectsModal = document.querySelector('#projects-modal');
 const icons = [
 '<i class="random-icons fa-solid fa-computer-mouse"></i>',
 '<i class="random-icons fa-solid fa-robot"></i>',
@@ -108,3 +112,19 @@ setInterval(() => {
     const randomNumbers = randomPosition(sortedRandomIcons);
     positionIcons(randomNumbers, sortedRandomIcons);
 }, 5000);
+
+// Open and close modal with List of 100 projects
+openModalBtn.addEventListener('click', () => {
+    backScreen.classList.remove('hidden-modal');
+    projectsModal.classList.remove('hidden-modal');
+    body.setAttribute("style", "overflow: hidden;")
+});
+
+const closeModalBtnsArray = Array.from(closeModalBtns);
+closeModalBtns.forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+        backScreen.classList.add('hidden-modal');
+        projectsModal.classList.add('hidden-modal');
+        body.removeAttribute("style")
+    });
+});
